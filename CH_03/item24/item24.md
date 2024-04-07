@@ -12,3 +12,19 @@
 - 없는 속성값은 나타내기
 - 타입스크립트는 함수가 타입 정제를 무효화하지 않는다고 가정하지만 실제로는 무효화될 가능성이 있음
 - 속성보다는 지역 변수를 사용하는 것이 타입 정제를 더욱 믿을 수 있음
+
+
+```ts
+//객체 비구조화 예시
+function isPointInPolygon(polygonL Polygon, pt: Coordinate) {
+  const {bbox} = polygon;
+  if (bbox) {
+    const {x, y} = bbox;
+    if (pt.x < x[0] || pt.x > x[1] ||
+        pt.y < y[0] || pt.y > y[1] {
+        return false;
+        }
+  }
+  // ...
+}
+``````
