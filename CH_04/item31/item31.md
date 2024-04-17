@@ -44,4 +44,5 @@ const [min, max] = extent([0, 1, 2])!; // 정상 -> null 단언 사용
 const range = extent([0, 1, 2]);
 if (range) {
   const [min, max] = range; // 정상 -> if문 사용
+}
 ```
