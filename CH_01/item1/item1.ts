@@ -4,3 +4,11 @@ function greet(who: string) {
 }
 
 greet("Kim"); // Hello Kim
+
+enum Flavor {
+  VANILLA = 0,
+  CHOCOLATE = 1,
+  STRAWBERRY = 2,
+}
+
+let flavoer = Flavor.CHOCOLATE;
